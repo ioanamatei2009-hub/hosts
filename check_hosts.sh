@@ -25,6 +25,9 @@ while read -r ip name_list; do
         set -- $name_list
         name="$1"
 
+
+
         check_ip "$name" "$ip" "$DNS_SERVER"
     fi
 done < /etc/hosts
+echo "Modificat de Holhos Alexandru"
